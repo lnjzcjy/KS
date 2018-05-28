@@ -1,0 +1,46 @@
+every student can input there ID (ID QLineEdit)
+that can be recorde in file cvs  (CVS     )
+begin   (begin  QPushButton)     push to recorde the ID and in the loop
+dicom   (dicom  QLabel)          show the dicom pic or jpg for V1.0
+finish  (finish QPushButton)     record the answer and show the score
+id_label(id_lable QLabel)
+ID      (ID     QLineEdit)        
+next    (next   QPushButton)     push to next question
+question(question QTextBrowser)  show the question
+score   (score   QAction)        show all the score
+answer  (answer QPlainTextEdit)  student put answer in it
+
+connect  
+begin.clicked.connect(self.begin)
+next.clicked.connect(self.next)
+finish.clicked.connect(self.finish)
+
+function
+begin :
+	set all self.menber = None
+	read ID  in self.studentID
+	read q.cvs random 5 records  in a list question
+	read 1  question in  list
+        dicom = pic[NO1]
+	question = question[NO1]1
+	NO = NO+1        
+next  :
+	answer write into self.menber
+	read 2 question in list
+	dicom = pic2[NO]
+	question =question[NO]
+	NO = NO +1
+format question.cvs
+number picname question answer
+       answer.cvs
+   id  picname question answer  studentanswer
+       
+self.menber
+	questionlist
+	ID
+	studentanswer
+        NO                       question Number       
+MODULE
+	CVS
+        
+
